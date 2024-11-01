@@ -6,3 +6,4 @@
 ### 1.1 Trees and Boosting (sklearn / catboost, pandas)
 
 ### 2. Convolution (PyTorch, Numpy)
+### 2.1 CIFAR problem (PyTorch, Numpy)
