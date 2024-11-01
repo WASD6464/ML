@@ -1,3 +1,6 @@
 ## A repository for the study of ML in various stages
 
-### Linear Models: Linear Regression, Logistic Regression (Numpy / PyTorch)
+### Complete:
+
+### 1. Linear Models: Linear Regression, Logistic Regression (Numpy / PyTorch)
+### 1.1 Trees and Boosting (sklearn / catboost, pandas)
