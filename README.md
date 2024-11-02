@@ -7,3 +7,4 @@
 
 ### 2. Convolution (PyTorch, Numpy)
 ### 2.1 CIFAR problem (PyTorch, Numpy)
+### 2.2 Architectures
