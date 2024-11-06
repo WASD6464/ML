@@ -12,7 +12,7 @@
 	Usage:
 
 ```
-streamlit run visual.py model_weights 'path/to/class/model.py' ModelClassName
+streamlit run Visualizer.py model_weights 'path/to/class/model.py' ModelClassName
 ```
 
 ### 2.1 CIFAR problem (PyTorch, Numpy)
