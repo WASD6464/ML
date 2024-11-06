@@ -7,9 +7,9 @@
 ### 1.2 Credit Scoring
 
 ### 2. Convolution (PyTorch, Numpy)
-	In MNIST problem added Vizualization
-	(An interactive web service where you can draw numbers and the model will tell you what number it is)
-	Usage:
+In MNIST problem added Vizualization
+(An interactive web service where you can draw numbers and the model will tell you what number it is)
+Usage:
 
 ```
 streamlit run Visualizer.py model_weights 'path/to/class/model.py' ModelClassName
