@@ -5,6 +5,7 @@
 ### 1. Linear Models: Linear Regression, Logistic Regression (Numpy / PyTorch)
 ### 1.1 Trees and Boosting (sklearn / catboost, pandas)
 ### 1.2 Credit Scoring
+### 1.3 Naive Bayes Classifier in Spam problem
 
 ### 2. Convolution (PyTorch, Numpy)
 In MNIST problem added Vizualization
