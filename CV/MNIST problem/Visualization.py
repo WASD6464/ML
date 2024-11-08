@@ -9,8 +9,6 @@ import os
 import sys
 import argparse
 
-long_options = ["Help", "Path_Model"]
-
 resize = Resize((28, 28))
 
 # Specify canvas parameters in application
