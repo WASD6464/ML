@@ -4,6 +4,7 @@ from streamlit_drawable_canvas import st_canvas
 import torch
 import numpy as np
 from torchvision.transforms import Resize
+import torch.nn.functional as F
 import importlib
 import os
 import sys
@@ -55,8 +56,9 @@ def running_model(model, device):
         image = canvas_result.image_data
         image = get_tensor(image).half().to(device)
         with torch.inference_mode():
-            preds = torch.argmax(model(image), dim=1).detach().cpu().item()
-        st.write(f"Predicted: {preds}")
+            preds = model(image).detach().cpu()
+        st.write(f"Predicted: {torch.argmax(preds, dim=1).item()}")
+        st.write(f"Prediction probs: {(F.softmax(preds.squeeze(), dim=-1)).round(decimals=2).tolist()}")
 
 
 def get_device():

@@ -6,6 +6,7 @@
 ### 1.1 Trees and Boosting (sklearn / catboost, pandas)
 ### 1.2 Credit Scoring
 ### 1.3 Naive Bayes Classifier in Spam problem
+### 1.4 KNN
 
 ### 2. Convolution (PyTorch, Numpy)
 In MNIST problem added Vizualization
@@ -13,7 +14,7 @@ In MNIST problem added Vizualization
 Usage:
 
 ```
-streamlit run Visualizer.py model_weights 'path/to/class/model.py' ModelClassName
+streamlit run Visualization.py model_weights 'path/to/class/model.py' ModelClassName
 ```
 
 ### 2.1 CIFAR problem (PyTorch, Numpy)
