@@ -18,6 +18,7 @@ streamlit run Visualization.py model_weights 'path/to/class/model.py' ModelClass
 ```
 
 ### 2.1 CIFAR problem (PyTorch, Numpy)
-### 2.2 Architectures (Uncomplete)
+### 2.2 Architectures
 ### 2.3 Auto Encoders: Detect Anomalies in time series
 ### 2.4 Variation Auto Encoders: Generate Faces
+### 2.5 AE/VAE in various problems
