@@ -22,3 +22,4 @@ streamlit run Visualization.py model_weights 'path/to/class/model.py' ModelClass
 ### 2.3 Auto Encoders: Detect Anomalies in time series
 ### 2.4 Variation Auto Encoders: Generate Faces
 ### 2.5 AE/VAE in various problems
+### 2.6 Semantic Segmentation: U-Net/SegNet
