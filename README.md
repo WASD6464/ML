@@ -23,6 +23,7 @@ streamlit run Visualization.py model_weights 'path/to/class/model.py' ModelClass
 ### 2.4 Variation Auto Encoders: Generate Faces
 ### 2.5 AE/VAE in various problems
 ### 2.6 Semantic Segmentation: U-Net/SegNet
+### 2.7 Image Style Trasfer using VGG-19
 
 ### 3. Generative models
 ### 3.1 Simple FC GAN on MNIST
