@@ -27,3 +27,4 @@ streamlit run Visualization.py model_weights 'path/to/class/model.py' ModelClass
  
 ### 3. Generative models
 ### 3.1 Simple FC GAN on MNIST
+### 3.2 DCGAN on MNIST
