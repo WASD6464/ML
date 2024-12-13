@@ -43,7 +43,7 @@ class Generator(nn.Module):
             self._block(features_g * 16, features_g * 8, 4, 2, 1), #8x8
             self._block(features_g * 8, features_g * 4, 4, 2, 1), #16x16
             self._block(features_g * 4, features_g * 2, 4, 2, 1), #32x32
-            nn.ConvTranspose2d(features_g, image_dim, 4, 2, 1),
+            nn.ConvTranspose2d(features_g * 2, image_dim, 4, 2, 1),
             nn.Tanh()
         )
 
@@ -74,17 +74,18 @@ def init_model(model):
 
 
 def test():
+    # Image example
     N, channels, H, W = 8, 3, 64, 64
     Z_dim = 100
     x = torch.randn(N, channels, H, W)
     disc = Discriminator(channels, 8)
     init_model(disc)
+    # Discriminator should give just probability true image
     assert disc(x).shape == (N, 1, 1, 1)
 
     gen = Generator(Z_dim, channels, 8)
     z = torch.randn((N, Z_dim, 1, 1))
+    # Generator should give image of train shape
     assert gen(z).shape == (N, channels, H, W)
 
     print("Success!")
-
-test()
