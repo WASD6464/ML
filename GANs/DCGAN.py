@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 
+# Define discriminator
 class Discriminator(nn.Module):
     def __init__(self, channels, features_d):
         super().__init__()
@@ -34,7 +35,7 @@ class Discriminator(nn.Module):
     def forward(self, x):
         return self.dis(x)
 
-
+# Define generator
 class Generator(nn.Module):
     def __init__(self, z_dim, image_dim, features_g):
         super().__init__()
@@ -65,14 +66,14 @@ class Generator(nn.Module):
         return self.gen(x)
 
 
-
+# Init model with normal distribution with zero mean and 0.02 std
 def init_model(model):
     for m in model.modules():
         if isinstance(m, (nn.Conv2d, nn.ConvTranspose2d, nn.BatchNorm2d)):
             nn.init.normal_(m.weight.data, mean=0.0, std=0.02)
 
 
-
+# Test generator and discriminator
 def test():
     # Image example
     N, channels, H, W = 8, 3, 64, 64
