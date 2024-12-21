@@ -29,3 +29,4 @@ streamlit run Visualization.py model_weights 'path/to/class/model.py' ModelClass
 ### 3.1 Simple FC GAN on MNIST
 ### 3.2 DCGAN on MNIST
 ### 3.3 DCGAN on Celeba
+### 3.4 WGAN
