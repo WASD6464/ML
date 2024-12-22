@@ -3,6 +3,8 @@ import torch.nn
 
 def grad_penalty(critic, real, fake, device = 'cpu'):
     BATCH_SIZE, C, H, W = real.shape
+    if real.shape != fake.shape:
+        raise ValueError("Real and fake shapes doesn't match")
     epsilon = torch.rand((BATCH_SIZE, 1, 1, 1)).repeat(1, C, H, W).to(device)
     interpolated_imgs = real * epsilon + fake * (1 - epsilon)
 
